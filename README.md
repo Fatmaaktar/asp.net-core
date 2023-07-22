@@ -11,4 +11,10 @@ Microsoft tarafından geliştirilmiş web uygulama geliştirme mimarisidir.
   - Bağımlılık Enjeksiyonu
   - Asenkron işlemler
   - Razor Pages
+## MVC Nedir?  
+Model-View-Controller  
+Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir soyutlama esastır.  
+**Model** Veri taban işlemlerinin yapıldığı katmandır  
+**Controller** Model ve view arası kontrolleri sağlar. Modeldeki verileri viewe gönderir  
+**View** Görsel sunum katmanıdır  
 
