@@ -14,7 +14,7 @@ Microsoft tarafından geliştirilmiş web uygulama geliştirme mimarisidir.
 ## MVC Nedir?  
 Model-View-Controller  
 Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir soyutlama esastır.  
-**Model** Veri taban işlemlerinin yapıldığı katmandır  
-**Controller** Model ve view arası kontrolleri sağlar. Modeldeki verileri viewe gönderir  
-**View** Görsel sunum katmanıdır  
+**Model** İşlenecek veriyi temsil eden, veri taban işlemlerinin yapıldığı katmandır  
+**Controller** Model ve view arası kontrolleri sağlar. Algoritmaları, servisleri,veritabanını vs. çalıştşrarak istenilen veriyi üretip ihtiyaç dahilinde viewe gönderir    
+**View** Elde edilen veriyi görselleştirerek sunan katmandır. 
 
