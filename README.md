@@ -16,5 +16,7 @@ Model-View-Controller
 Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir soyutlama esastır.  
 **Model** İşlenecek veriyi temsil eden, veri taban işlemlerinin yapıldığı katmandır  
 **Controller** Model ve view arası kontrolleri sağlar. Algoritmaları, servisleri,veritabanını vs. çalıştırarak istenilen veriyi üretip ihtiyaç dahilinde viewe gönderir    
-**View** Elde edilen veriyi görselleştirerek sunan katmandır. 
+**View** Elde edilen veriyi görselleştirerek sunan katmandır.  
+
+
 
