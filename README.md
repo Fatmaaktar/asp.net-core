@@ -18,5 +18,13 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
 **Controller** Model ve view arası kontrolleri sağlar. Algoritmaları, servisleri,veritabanını vs. çalıştırarak istenilen veriyi üretip ihtiyaç dahilinde viewe gönderir    
 **View** Elde edilen veriyi görselleştirerek sunan katmandır.  
 
+  ## Razor
+  Razor MVC projelerinde HTML kodları içerisinde c# kodlarını kullanmamızı sağlayan teknolojidir  
+  **@** razor operatörüdür,razorda yorum satırları  @* ....... *@  bu şekilde ifade edilir.  
+  **Not** Razorda ayrı ayrı kullanılan  scope'lar( @{....} ) derlenince tek bir scope olarak görünür  
+  Razorlarda text etiketleri, sayısal işlemler, Ternary operatörü, koşul yapıları ve döngüler kullanılabilir  
+  (Sayısal işlemlerde birbirinden bağımsız işlemler ayrı parantez içine alınmalı).
+  
+
 
 
