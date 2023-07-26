@@ -30,10 +30,10 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
   ### URL Halpers  
   Asp .NET Core MVC uygulamalarında url oluşturmak için yardımcı methodlar içeren ve o URL'e dair bilgi veren sınıflardır  
   **Methodlar**  
-  -Action
-  -ActionLink
-  -Content
-  -RouteUrl
+  -Action  
+  -ActionLink  
+  -Content  
+  -RouteUrl  
 
   **Propertyes**
   -ActionContext  
@@ -42,16 +42,16 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
   ### HTML Halpers  
   Html etiketlerini server tabanlı oluşturmamızı sağlayan yardımcı methodları barındırır. Hedeflenen .cshtml dosyalarını render etmemizi sağlar. Contexte ait bilgi verir. Veri taşıma kontrollerine erişmemizi sağlar.  
   **Methodlar**  
-  -html.Partial
-  -Html.RenderPartial
-  -Html.ActionLink
-  -Html Form Methodları (Html.BeginForm,Html.CheckBox,Html.TextBox,Html.Display,Html.Password,Html.TextArea,Html.ValidationMessage)
+  -html.Partial  
+  -Html.RenderPartial  
+  -Html.ActionLink  
+  -Html Form Methodları (Html.BeginForm,Html.CheckBox,Html.TextBox,Html.Display,Html.Password,Html.TextArea,Html.ValidationMessage)  
 
   **Properties**  
-  -ViewContext
-  -TempData 
-  -ViewData 
-  -ViewBag
+  -ViewContext  
+  -TempData  
+  -ViewData  
+  -ViewBag  
 
   ### Tag Helpers  
  Tag Helpers, razor sayfalardaki server-side kodları HTML elementleri olarak oluşturmayı sağlayan; View’ın daha okunabilir, anlaşılabilir ve kolay geliştirilebilir hale gelmesine olanak tanıyan,Html Helper'ın yerini almış yapılardır. Html Helper yapılarından farkı , tüm element yerine sadece attribute oluştururlar.
