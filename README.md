@@ -48,7 +48,7 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
   -Html.RenderPartial  
   -Html.ActionLink  
   -Html Form Methodları (Html.BeginForm,Html.CheckBox,Html.TextBox,Html.Display,Html.Password,Html.TextArea,Html.ValidationMessage)  
-
+  
   **Properties**  
   -ViewContext  
   -TempData  
