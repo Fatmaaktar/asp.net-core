@@ -12,7 +12,17 @@ Microsoft tarafından geliştirilmiş web uygulama geliştirme mimarisidir.
   - Bağımlılık Enjeksiyonu
   - Asenkron işlemler
   - Razor Pages
-## MVC Nedir?  
+## WEB GELİŞTİRME YAKLAŞIMLARI
+### Olay Tabanlı Programlama
+Olay Tabanlı mimari de olaylar oluşturan tarafından yayımlanır, ihtiyacı olan gelip çekmez.  
+Alıcılar olayı aldığında olayı hemen işlerler. Bu olay yayımlandığında onu alan bileşen o olay ile ne yapacağına karar verir.  
+Alan modül cevap dönmek zorunda değildir. Bu mimari kalıp sıralı ve istek, cevap tarzı mimarilere göre daha esnek bir mimaridir.
+
+### API  
+Uygulama Programlama Arayüzü. Client ve server arası iletişimi sağlar.  
+Web uygulamaları işletim sistemleri,veri tabanları, donanımlar, veyahut yazılım kütühaneleri ile iletişim kurar.
+
+### MVC Nedir?  
 Model-View-Controller  
 
 Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir soyutlama esastır.  
@@ -59,5 +69,8 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
  Tag Helpers, razor sayfalardaki server-side kodları HTML elementleri olarak oluşturmayı sağlayan; View’ın daha okunabilir, anlaşılabilir ve kolay geliştirilebilir hale gelmesine olanak tanıyan,Html Helper'ın yerini almış yapılardır. Html Helper yapılarından farkı , tüm element yerine sadece attribute oluştururlar  
  Bir view'de tag helper kullanabilmek için @addTagHelper ile Microsoft.AspNetCore.MVC.TagHelpers kütüphanesi çağırılır.  
 " @addTagHelper*,Microsoft.AspNetCore.MVC.TagHelpers " ifadesi ile tüm Tag Helperlar kullanılabilir.   
+
+
+## devam eden çalışma
 
 
