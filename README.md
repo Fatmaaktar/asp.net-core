@@ -30,16 +30,16 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
 **Controller** Model ve view arası kontrolleri sağlar. Algoritmaları, servisleri,veritabanını vs. çalıştırarak istenilen veriyi üretip ihtiyaç dahilinde viewe gönderir    
 **View** Elde edilen veriyi görselleştirerek sunan katmandır.  
 
-  ## Razor
+  #### Razor
   Razor MVC projelerinde HTML kodları içerisinde c# kodlarını kullanmamızı sağlayan teknolojidir  
   **@** razor operatörüdür,razorda yorum satırları  @* ....... *@  bu şekilde ifade edilir.  
   **Not** Razorda ayrı ayrı kullanılan  scope'lar( @{....} ) derlenince tek bir scope olarak görünür  
   Razorlarda text etiketleri, sayısal işlemler, Ternary operatörü, koşul yapıları ve döngüler kullanılabilir  
   (Sayısal işlemlerde birbirinden bağımsız işlemler ayrı parantez içine alınmalı).
 
-  ## Halpers  
+  ##### Halpers  
   MVC'de 3 tane halper bulunur(yardımcı methodlar);  
-  ### URL Halpers  
+  ##### URL Halpers  
   Asp .NET Core MVC uygulamalarında url oluşturmak için yardımcı methodlar içeren ve o URL'e dair bilgi veren sınıflardır  
   **Methodlar**  
   -Action  
@@ -51,7 +51,7 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
   -ActionContext  
 
 
-  ### HTML Halpers  
+  ##### HTML Halpers  
   Html etiketlerini server tabanlı oluşturmamızı sağlayan yardımcı methodları barındırır. Hedeflenen .cshtml dosyalarını render etmemizi sağlar. Contexte ait bilgi verir. Veri taşıma kontrollerine erişmemizi sağlar.  
   **Methodlar**  
   -html.Partial  
@@ -65,7 +65,7 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
   -ViewData  
   -ViewBag  
 
-  ### Tag Helpers  
+  ##### Tag Helpers  
  Tag Helpers, razor sayfalardaki server-side kodları HTML elementleri olarak oluşturmayı sağlayan; View’ın daha okunabilir, anlaşılabilir ve kolay geliştirilebilir hale gelmesine olanak tanıyan,Html Helper'ın yerini almış yapılardır. Html Helper yapılarından farkı , tüm element yerine sadece attribute oluştururlar  
  Bir view'de tag helper kullanabilmek için @addTagHelper ile Microsoft.AspNetCore.MVC.TagHelpers kütüphanesi çağırılır.  
 " @addTagHelper*,Microsoft.AspNetCore.MVC.TagHelpers " ifadesi ile tüm Tag Helperlar kullanılabilir.   
