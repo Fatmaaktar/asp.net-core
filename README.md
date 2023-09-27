@@ -71,6 +71,6 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
 " @addTagHelper*,Microsoft.AspNetCore.MVC.TagHelpers " ifadesi ile tüm Tag Helperlar kullanılabilir.   
 
 
-## devam eden çalışma
+## Not: devam eden çalışma
 
 
