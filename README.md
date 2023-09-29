@@ -68,7 +68,10 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
   ##### Tag Helpers  
  Tag Helpers, razor sayfalardaki server-side kodları HTML elementleri olarak oluşturmayı sağlayan; View’ın daha okunabilir, anlaşılabilir ve kolay geliştirilebilir hale gelmesine olanak tanıyan,Html Helper'ın yerini almış yapılardır. Html Helper yapılarından farkı , tüm element yerine sadece attribute oluştururlar  
  Bir view'de tag helper kullanabilmek için @addTagHelper ile Microsoft.AspNetCore.MVC.TagHelpers kütüphanesi çağırılır.  
-" @addTagHelper*,Microsoft.AspNetCore.MVC.TagHelpers " ifadesi ile tüm Tag Helperlar kullanılabilir.   
+" @addTagHelper*,Microsoft.AspNetCore.MVC.TagHelpers " ifadesi ile tüm Tag Helperlar kullanılabilir.    
+<br>
+**Not** Bir web Uygulamasında form tetiklendiğinde içerisindeki inputların değerleri hedef endpointe Post olarak gönderilir.  
+Form içerisindeki input nesneleri post edildiğinde bu nesnelere karşılık gelen proportileri barındıran  bir nesne ile otomatik olarak bind edilirlerç
 
 
 ## Not: devam eden çalışma
