@@ -71,7 +71,29 @@ Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir
 " @addTagHelper*,Microsoft.AspNetCore.MVC.TagHelpers " ifadesi ile tüm Tag Helperlar kullanılabilir.    
 <br>
 **Not** Bir web Uygulamasında form tetiklendiğinde içerisindeki inputların değerleri hedef endpointe Post olarak gönderilir.  
-Form içerisindeki input nesneleri post edildiğinde bu nesnelere karşılık gelen proportileri barındıran  bir nesne ile otomatik olarak bind edilirlerç
+Form içerisindeki input nesneleri post edildiğinde bu nesnelere karşılık gelen proportileri barındıran  bir nesne ile otomatik olarak bind edilirler  
+
+### Kullanıcıdan Veri Alma Yöntemleri  
+1) Form Üzerinden Veri Alma: Get ve Post ile Form üzerinden kullanıcıdan veri aalınabilir  
+2) Query String : Güvenlik gerktirmeyen bilgilerin Url üzerinden taşınması için kullanılan yapılardır  **Not** Yapılan requestin türü her ne olursa olsun query string değerleri taşınabilir  
+3) Route
+4) Headers
+5) Ajax
+
+### Kullanıcıdan Gelen Verilerin Doğrulanması  
+**_Validation**  Bir değerin içinde bulunduğu şartlara uygun olması durumudur. Belirlenen koşullara uygun olup olmadığını kontrol eder. Bu kontrole göre verilen işleme tabi tutulması durumudur  
+**Modelstate** MVC'de bir type'ın data anotationslarının durumunu kontrol eden ve geriye sonuç dödüren property'dir.  
+### Server Validation'ları Dinamik Olarak Client Tabanlı Uygulamak  
+Bu işlemi yapmak için projemize 3 kütüphane eklememiz gerekir; Jequery,JequeryValidate ve JequeryValidationUnabtrosive kütüphaneleri. Daha sonra hangi view'de client tabanlı validation işlemi yapılacaksa bu kütüphaneler kaynak olarak belirtilmeli.  
+
+### Layout  
+Sayfadan sayfaya değişkenlik göstermeyen alanları Layout'ta tanımlıyoruz. Tutarlı düzene sahip web siteleri yapmak için(Genelde Layout işlemleri bir view dosyası üzerinden gösterilir. View altında Shared altında bir "_Layout.cshtml" dosyası oluşturulur).  
+**RenderBody** Render eden view'lerin Layout'ta nereye basılacağını temsil eder.  
+**_ViewStart Dosyası** Tüm viewlerdeki ortak çalışmaların yapıldığı view'dir.Bütün view'lerdeki ortak layout tanımlaması bu dosyada yapılır.  
+**_ViewImports Dosyası** Razor sayfaları için kütüphane ve namespace tanımlamalarını yaptığımız dosyadır.  
+
+### Modüler Tasarım Yapılanması  
+**PartialView** Modüler tasarımda her bir modülün ayrı bir .cshtml parça olarak tasarlanmasını ve ihtiyaç doğrultusunda ilgili parçanın çağrılıp kullanılımasını sağlayan bir yöntemdir.
 
 
 ## Not: devam eden çalışma
