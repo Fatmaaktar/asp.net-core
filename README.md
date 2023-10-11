@@ -93,7 +93,9 @@ Sayfadan sayfaya değişkenlik göstermeyen alanları Layout'ta tanımlıyoruz. 
 **_ViewImports Dosyası** Razor sayfaları için kütüphane ve namespace tanımlamalarını yaptığımız dosyadır.  
 
 ### Modüler Tasarım Yapılanması  
-**PartialView** Modüler tasarımda her bir modülün ayrı bir .cshtml parça olarak tasarlanmasını ve ihtiyaç doğrultusunda ilgili parçanın çağrılıp kullanılımasını sağlayan bir yöntemdir.
+**PartialView** Modüler tasarımda her bir modülün ayrı bir .cshtml parça olarak tasarlanmasını ve ihtiyaç doğrultusunda ilgili parçanın çağrılıp kullanılımasını sağlayan bir yöntemdir.  
+**ViewComponent** İhtiyacı olan dataları controller üzerinden değil direkt kendi cs dosyasından elde edebilmektedir. Böylece Controllerdaki maliyeti ortadan kaldırır.  
+**Not** "Public IViewComponentResult Invoke(){}" Tasarlanan ViewComponent çağırılıp render edildiğinde içerisinde çalışmasını istediğimiz kodları bu imzada bir methodun içerisine yerleştirmeliyiz..
 
 
 ## Not: devam eden çalışma
