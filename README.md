@@ -95,8 +95,22 @@ Sayfadan sayfaya değişkenlik göstermeyen alanları Layout'ta tanımlıyoruz. 
 ### Modüler Tasarım Yapılanması  
 **PartialView** Modüler tasarımda her bir modülün ayrı bir .cshtml parça olarak tasarlanmasını ve ihtiyaç doğrultusunda ilgili parçanın çağrılıp kullanılımasını sağlayan bir yöntemdir.  
 **ViewComponent** İhtiyacı olan dataları controller üzerinden değil direkt kendi cs dosyasından elde edebilmektedir. Böylece Controllerdaki maliyeti ortadan kaldırır.  
-**Not** "Public IViewComponentResult Invoke(){}" Tasarlanan ViewComponent çağırılıp render edildiğinde içerisinde çalışmasını istediğimiz kodları bu imzada bir methodun içerisine yerleştirmeliyiz..
-
+**Not** "Public IViewComponentResult Invoke(){}" Tasarlanan ViewComponent çağırılıp render edildiğinde içerisinde çalışmasını istediğimiz kodları bu imzada bir methodun içerisine yerleştirmeliyiz..  
+### Route Yapılanması  
+Gelecek olan isteğin hangi rotaya gideceğini belirleyen şablonlardır.  
+#### Custom Route Handler  
+Herhangi bir belirlenmiş route şemasının controller sınıflarından ziyade bisuness mantığında karşılanması ve orada iş görüp responsenin dönülmesi operasynudur(resim boyutlandırma vb. işlemler  
+### Middleware  
+ Web uygulamasına client'ten gelen requeste karşılık verecek response'a kadar arada farklı işlemler gerçekleştirmek ve sürecin gidişatına farklı yön vermek için. Sarmal bir şekilde tetiklenirler  
+ **Not** Configure metodu içerisinde middleware'ler çağırılır. Asp .NET Core mimarisinde tüm middlewareler Use adı ile başlar  
+ ### Hazır Midleware'ler  
+ #### Run Metodu  
+ Kendisinden sonra gelen middleware'i tetiklemez. Bu yüzden akış kesilir. Buna Short Circuit(Kısa Devre) denir  
+ #### Use Metodu  
+ Devreye girdikten sonra süreçte sıradaki middleware'i çağırmakta ve normal middleware işlevi bittikten sonra geriye dönüp devam edebilen yapıya sahip  
+ #### Map Metodu  
+ Bazen middleware'i talep gönderen path'e göre filtrelemek isteyebiliriz. Bunun için use ya da run fonksiyonlarında if kontrolü sağlayabilir yahut map metodu ile daha profesyonel işlem yapabiliriz  
+ 
 
 ## Not: devam eden çalışma
 
