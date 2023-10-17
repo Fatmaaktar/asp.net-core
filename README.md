@@ -110,6 +110,21 @@ Herhangi bir belirlenmiş route şemasının controller sınıflarından ziyade 
  Devreye girdikten sonra süreçte sıradaki middleware'i çağırmakta ve normal middleware işlevi bittikten sonra geriye dönüp devam edebilen yapıya sahip  
  #### Map Metodu  
  Bazen middleware'i talep gönderen path'e göre filtrelemek isteyebiliriz. Bunun için use ya da run fonksiyonlarında if kontrolü sağlayabilir yahut map metodu ile daha profesyonel işlem yapabiliriz  
+ #### MapWhen Metodu  
+ Map metodu ile sadece requestin yapıldığı path'e göre filtreleme yapılırken MapWhen metodu ile gelen requestin herhangi bir özelliğine göre filtreleme işlemi gerçekleştirilebilir  
+
+ ### Dependency Injection (Bağımlılık Enjeksiyonu)  
+ Temel olarak oluşturulan bir sınıf içerisinde başka bir sınıfın nesnesini new anahtar sözcüğü ile oluşturulmamasını söyleyen bir yaklaşımdır.  
+ Sınıf içerisinde ihtiyaç olan nesnenin ya Configurator'dan ya da setter metoduyla parametre olarak alınması gerektiğini savunur. Böylece her iki sınıfı birbirinden izole etmiş olur.  
+### IoC Nedir? Çalışma Mantığı  
+Dependency Injection kullanarak enjekte edilecek olan tüm değerler/nesneler IoC Container dediğimiz bir sınıfta tutulurlar. Ve ihtiyaç doğrultusunda bu değerler çağırılarak elde edilirler  
+#### Asp.NET Core'de IoC Yapılanması  
+.Net uygulamalarında IoC yapılanmasını sağlayan third party frameworkler mevcuttur(Structurmap,AutoFac,Ninject vb.)  
+### Built-in IoC Container  
+İçerisine koyulacak nesneleri üç farklı davranışta alır...   
+**Singleton** Uygulama bazlı tekil nesne oluşturur.Tüm taleplere o nesneyi gönderir  
+**Scoped** Her request başına bir nesne üretir ve o requesti pipeline'nında olan tüm isteklere o nesneyi gönderir  
+**Transient** Her requestin her talebine karşılık bir nesne üretir ve gönderir.
  
 
 ## Not: devam eden çalışma
