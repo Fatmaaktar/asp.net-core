@@ -124,7 +124,22 @@ Dependency Injection kullanarak enjekte edilecek olan tüm değerler/nesneler Io
 İçerisine koyulacak nesneleri üç farklı davranışta alır...   
 **Singleton** Uygulama bazlı tekil nesne oluşturur.Tüm taleplere o nesneyi gönderir  
 **Scoped** Her request başına bir nesne üretir ve o requesti pipeline'nında olan tüm isteklere o nesneyi gönderir  
-**Transient** Her requestin her talebine karşılık bir nesne üretir ve gönderir.
+**Transient** Her requestin her talebine karşılık bir nesne üretir ve gönderir.  
+
+### Area  
+Web uygulamasında farklı işlevsellikleri ayırmak için kullanılan özelliktir. Bu işlevler için farklı katmanlarda bir route ayarlamamızı sağlayan ve bu katmanda o işleve özel yönetim sergileyen bir yapılanmadır.  
+Her bir area içerisinde View,Controller ve Model barındırır  
+#### Nerelerde kullanılır?  
+1) Yönetim Paneli
+2) Faturalandırma Sayfayfaları
+3) İstatistiksel Paneller
+4) İşlevsel Modüller Vs...
+
+**Not** Area içinde controller Area Attribute'u ile işaretlenmelidir. Aksi taktirde farklı area'larda ki controller'lardan aynı isimde olanlar çakışır   
+**Not** Her bir area içerisindeki controller'lara erişim için farklı bir route sağlamaktadır. Bu route tarafımızca sağlamnalıdır  
+**MapControllerRoute** default area rotası belirlememizi sağlar  
+**MapAreaControllerRoute** bir area'ya özel rota belirlememizi sağlar  
+
  
 
 ## Not: devam eden çalışma
