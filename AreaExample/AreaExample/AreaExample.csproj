@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\InvoicePanel\Data\" />
+    <Folder Include="Areas\InvoicePanel\Models\" />
+    <Folder Include="Areas\InvoicePanel\Views\" />
+    <Folder Include="Areas\ManagementPanel\Data\" />
+    <Folder Include="Areas\ManagementPanel\Models\" />
+    <Folder Include="Areas\ManagementPanel\Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
