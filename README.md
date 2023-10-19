@@ -140,6 +140,23 @@ Her bir area içerisinde View,Controller ve Model barındırır
 **MapControllerRoute** default area rotası belirlememizi sağlar  
 **MapAreaControllerRoute** bir area'ya özel rota belirlememizi sağlar  
 
+### TDO(Data Tranfer Object)  
+Herhangi bir davranışı olmayan ve uygulamanın çeşıtli yerlerinde yanlızca bir veri tüketimi için kullanılan veritabanındaki herhangi bir verinin fransfer nesnesidir  
+### ViewModel  
+OOP yapılanmasında bir modelin kullanıcıyla etkileşimi neticesinde kullanılan ve esas datanın memberlarını temsil eden ve süreate ilgili model yerine veri taşımayı üstlenen bir nesnedir.  
+Ya da birden fazla modeli tek bir nesne üzerinden birleştirme görevi gören nesnedir(her iki senaryo içinde geçerli)  
+
+**Not** Kullanıcıya sunulan hiçbir veri direkt olarak veritabanındaki entitiy türünden olmamamlıdır. Bu tarz durumlarda ViewModel kullanılmalıdır  
+#### Kontrat/Sözleşme Mantığı  
+Backend'de üretilen bir verinin client'e gönderilmesi için tasarlanan ViewModel o işlemin sözleşmesi olmaktadır. Haliyle Backend'de gelecek datayı client'ın uygun formatta karşılayabilmesi için kesinlikle o türden bir nesne oluşturması gerekecektir  
+#### ViewModel'i Entity Model'e Dönüştürme  
+Kullanıcıdan gelen dataları ViewModel ile karşıladıktan sonra bu ViewModel'da ki verileri veritabanına kaydetmek isteyebiliriz. Bu durumda bu verileri Entitiy Model'a dönüştürmemiz gerekecektir. Bunun için aşağıdaki yöntemlerden herhangi biri kullanılabilir:  
+1) Manuel
+2) Implicit Operator Overload
+3) Expilit Operator Overload
+4) Reflection
+5) AutoMapper Library
+
  
 
 ## Not: devam eden çalışma
