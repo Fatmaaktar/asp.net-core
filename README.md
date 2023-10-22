@@ -1,5 +1,26 @@
-# Asp.net
+## Web Uygulamalarında Genel Bazı Terimler
+**Request** Client üzerinden User'in yaptığı istektir  
+**Response** Sunucunun işlenen web sitesini tekrar tarayıcıya yüklemesi durumu  
+**HTTP** Client ve server arası bağlantı sağlamak için kullanılan protokoldür  
+### HTTP Fonksiyonları  
+**GET** Sunucudan verileri listeler  
+**POST** Sunucuya veri göndermek eklemek içindir  
+**PUT** Var olan veriyi değiştirmek yani güncellemek içindir  
+**DELETE** Verileri silmek için kullanılır
 
+## MVC Tasarım Mimarisine Genel Bakış  
+**Program.cs** Asp.NET Core Console uygulamasıdır, sunucusunu bu program sayesinde ayağa kaldırır Startup.cs'deki veriler burda çağırılır   
+**Startup.cs** Bu uygulamada kullanılacak servisler, ara yazılımlar vs. çağırılır  
+**appsettings.json** Projede kullanılan static değerleri barındırır  
+**Dependencies** Uygulamada kullanılan harici ve dahili kütüphaneleri barındırır  
+**ViewResult** Response olarak bir view (cs.html) render etmemizi sağlayan action türüdür  
+**PartialViewResult** ViewResult ile aynı işlevi görür farkı ise Client tabanlı Ajax isteklerinde kullanıma yatkın  
+**EmptyResult** Gelen istekler neticesinde herhangi birşey döndürmez  
+**ContentResult** Metinsel içerikleri döndürür  
+**ActionResult** Geriye döndürülecek action türleri değişkenlik gösterdiği durumlarda kullanılır  
+**Not** Controller içerisinde "NonAction" atribütü ile işaretlenen fonksiyonlar dışarıdan request karşılamazlar.  
+
+## Asp.net
 Microsoft tarafından geliştirilmiş web uygulama geliştirme mimarisidir. 
 ## Asp.NET Core
 - Microsoft tarafından geliştirilen ücretsiz ve açık kaynak web gelişltirme mimarisidir.
