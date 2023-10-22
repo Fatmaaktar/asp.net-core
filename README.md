@@ -157,6 +157,29 @@ Kullanıcıdan gelen dataları ViewModel ile karşıladıktan sonra bu ViewModel
 4) Reflection
 5) AutoMapper Library
 
+### Configuration (Yapılandırma)  
+<li>
+  Yapılandırma genellikle algoritmanın dışında lakin algoritmada kullanılacak olan değerleri belirleme  sürecidir
+</li>
+<li>
+  Yapılandırma, bir uygulamanın herhangi bir ortamda gerçekleştireceği davranışlarını belirlememizi sağlayan static değerin tanımlanmasıdır
+</li>
+<li>
+  Eski Asp.NET uygulamalarında kullanılan web.config yahut Global.asax gibi dosyalar standart framework'ün yapılandırılmasında kullanılan ortamlardır
+</li>  
+
+#### Asp.NET Core'da ki appsettings.json Dışında Yapılandırma Araçları  
+<li>
+  Appsettings.json | appsettings.{Environment}.json
+</li>
+<li>
+  Secrets.json (Secret Manager Tools)
+</li>
+<li>
+  Environment Variables
+</li>  
+
+
  
 
 ## Not: devam eden çalışma
