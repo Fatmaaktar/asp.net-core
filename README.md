@@ -168,6 +168,8 @@ Kullanıcıdan gelen dataları ViewModel ile karşıladıktan sonra bu ViewModel
   Eski Asp.NET uygulamalarında kullanılan web.config yahut Global.asax gibi dosyalar standart framework'ün yapılandırılmasında kullanılan ortamlardır
 </li>  
 
+**appsettings.json**  Veri tabanı bağlantısı gibi sabit ifadeleri belirli bir yerden çekmek isterken appsetting dosyasını kullanılır  
+
 #### Asp.NET Core'da ki appsettings.json Dışında Yapılandırma Araçları  
 <li>
   Appsettings.json | appsettings.{Environment}.json
@@ -179,9 +181,27 @@ Kullanıcıdan gelen dataları ViewModel ile karşıladıktan sonra bu ViewModel
   Environment Variables
 </li>  
 
+**Option Pattern** appsetings.json dosyasındaki konfigurasyonları Dependency Injection ile kullanmamızı sağlayan ve yapılandırılmış olan nesnel modellerle ilgili konfigurasyonları temsil etmemizi sağlayan bir tasarım desenidir  
 
- 
+#### Secret Manager Tools  
+Web uygulamalarında development ortamında kullandığımız bazı verilerin canlıya deploy edilmesini istemeyebiliriz, bu verilerimiz;  
+<li>
+  Veritabanı bilgilerini barındıran connection string değerleri
+</li>
+<li>
+  Herhangi bir kritik arz eden token değeri
+</li>
+<li>
+  Facebook veya Google gibi third party authentication işlemleri yapmamızı sağlayan client secret id değerler vs.
+</li>  
+Bu veriler deploy ortamında kullanılırken, production ortamında kötü niyetli kişilerin uygulama dosyalarına erişim sağladıkları durumlarda elde edemeyecekleri vaziyette depolanmaları gerekmektedir işte bunun için Secret Manager Tool geliştirilmiştir  
 
-## Not: devam eden çalışma
+**Not** Kritik arz etmeyen yani static değerlerimizi "appsetings.json" dosyasında barındırırız ancak kritik verilerimizi "secret.json" da barındırırız  
+
+#### Environement  
+Bir web uygulamasında uygulamanın bulunduğu aşamalara dayalı davranışı kontrol etmek ve yönlendirmek isteyebiliriz bunun için Environement dediğimiz değişkenler mevcuttur  
+
+**ASPNETCORE_ENVIRONMENT**
+İlgili uygulamanın hangi ortamda ayağa kalkacağını belirtir (Development,Staging ve Production) .
 
 
