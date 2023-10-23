@@ -43,7 +43,7 @@ Alan modül cevap dönmek zorunda değildir. Bu mimari kalıp sıralı ve istek,
 Uygulama Programlama Arayüzü. Client ve server arası iletişimi sağlar.  
 Web uygulamaları işletim sistemleri,veri tabanları, donanımlar, veyahut yazılım kütühaneleri ile iletişim kurar.
 
-### MVC Nedir?  
+### MVC  
 Model-View-Controller  
 
 Design Pattern(Tasrım kalıbıdır). Üretilen veri ile gösterim arasında bir soyutlama esastır.  
