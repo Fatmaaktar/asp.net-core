@@ -219,7 +219,7 @@ Bu veriler deploy ortamında kullanılırken, production ortamında kötü niyet
 
 **Not** Kritik arz etmeyen yani static değerlerimizi "appsetings.json" dosyasında barındırırız ancak kritik verilerimizi "secret.json" da barındırırız  
 
-#### Environement  
+#### Environment  
 Bir web uygulamasında uygulamanın bulunduğu aşamalara dayalı davranışı kontrol etmek ve yönlendirmek isteyebiliriz bunun için Environement dediğimiz değişkenler mevcuttur  
 
 **ASPNETCORE_ENVIRONMENT**
